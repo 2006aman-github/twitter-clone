@@ -1,0 +1,124 @@
+.home__component {
+  flex: 0.5;
+  /* background-color: #00acee; */
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  overflow-y: auto;
+  height: 100vh;
+}
+@media only screen and (max-width: 1100px) {
+  .home__component {
+    flex: 0.9;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .home__component {
+    flex: 0.95;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .home__component {
+    flex: 0.99;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.home__header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  /* background-color: aqua; */
+  text-align: center;
+  padding: 5px;
+  box-sizing: border-box;
+  border-bottom: 4px solid lightgray;
+}
+.home__header h3 {
+  border-bottom: 1px solid lightgrey;
+  font-size: 1.5rem;
+  margin: 0;
+}
+.message__container {
+  display: flex;
+  /* border: 1px solid black; */
+  justify-content: center;
+  padding: 15px;
+}
+.message__container Input {
+  width: 250px;
+  height: 30px;
+}
+.avatar {
+  margin-right: 20px;
+}
+.main__tweet__button {
+  width: 100px;
+  margin-top: 5px;
+  margin-left: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  height: 35px;
+  background-color: #00acee;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+.main__tweet__button__disabled {
+  width: 100px;
+  margin-top: 5px;
+  margin-left: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  height: 35px;
+  background-color: #00acee;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  background-color: #8fdfff;
+}
+.send__div {
+  text-align: end;
+  vertical-align: middle;
+  padding: 8px;
+  /* border: 1px solid black; */
+  flex: 0.1;
+}
+.image__input {
+  width: 240px;
+  height: 35px;
+  border: none;
+  padding-left: 10px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 15px;
+}
+.image__input ::placeholder {
+  font-style: italic;
+}
+.post__section {
+  overflow: auto;
+}
+
+.signIn__button {
+  width: 230px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  height: 40px;
+  background-color: #00acee;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.modal__buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}

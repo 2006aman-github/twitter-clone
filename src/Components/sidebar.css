@@ -1,0 +1,81 @@
+.main__div {
+  flex: 0.2;
+  height: 100vh;
+  /* background-color: white; */
+  padding: 10px;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 1000px) {
+  .main__div {
+    flex: 0.01;
+    margin: 0;
+    /* padding: 0; */
+  }
+  .main__links ul li div {
+    display: none;
+  }
+  .tweet__button {
+    display: none;
+  }
+}
+.main__header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  /* border: 1px solid green; */
+  color: #00acee;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-left: 35px;
+}
+
+.main__links {
+  padding: 0px;
+  margin-top: 0;
+}
+.main__links ul {
+  list-style: none;
+  margin-top: 0;
+}
+.active {
+  color: #00acee;
+}
+.main__links ul li {
+  margin-top: 4px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1.2rem;
+  padding: 8px 10px;
+  border-radius: 25px;
+  width: auto;
+  float: left;
+  clear: both;
+}
+.main__links ul li:hover {
+  color: #00acee;
+  background-color: rgb(210, 238, 255);
+}
+.main__links ul li span {
+  margin-right: 20px;
+}
+.tweet__button {
+  width: 230px;
+  margin-top: 30px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  height: 50px;
+  background-color: #00acee;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.active {
+  color: #00acee;
+}
